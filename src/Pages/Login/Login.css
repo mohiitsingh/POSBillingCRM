@@ -1,0 +1,127 @@
+/* Full screen */
+.login-wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* LEFT BRAND PANEL */
+.login-brand {
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+  color: #ffffff;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-brand h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.login-brand p {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* RIGHT LOGIN PANEL */
+.login-panel {
+  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LOGIN BOX */
+.login-box {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 48px;
+  border-radius: 18px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+}
+
+.login-box h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.login-caption {
+  display: block;
+  margin: 8px 0 32px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* INPUTS */
+.input-group {
+  margin-bottom: 22px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(79, 70, 229, 0.35);
+}
+
+/* FOOTER */
+footer {
+  margin-top: 32px;
+  font-size: 12px;
+  color: #9ca3af;
+  text-align: center;
+}
+
+/* MOBILE FALLBACK */
+@media (max-width: 1024px) {
+  .login-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .login-brand {
+    display: none;
+  }
+}
